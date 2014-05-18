@@ -1,0 +1,13 @@
+<table class="mailTable">
+  <tbody>
+    <tr ng-repeat="email in allMail">
+      <td class='mailIcon'><input type="checkbox"></td>
+      <td class='mailIcon'>&#9734</td>
+      <td class='mailIcon'>>></td>
+      <td class='mailSender'>{{email.sender}}</td>
+      <td class='mailText'><span>{{email.subject}}</span> - {{email.text}}</td>
+      <td class='mailBuffer'></td>
+      <td class='mailTime'>{{email.sendTime}}</td>
+    </tr>
+  </tbody>
+</table>

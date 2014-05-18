@@ -1,0 +1,191 @@
+/* Space out content a bit */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+/*This section is used for templating -- REMOVE*/
+body::after {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  background: url('../images/bg.png');
+  background-size: cover;
+  opacity: 0.5;
+}
+
+/* Page header */
+.header {
+  width: 100%;
+  max-height:60px;
+  position: relative;
+  z-index: 5;
+  display: table;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid black;
+  opacity: 0.8;
+}
+
+.header-logo {
+  width: 143px;
+  padding: 0 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-search {
+  width: 650px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-search-container {
+  width: 650px;
+  max-height: 28px;
+  background-color: white;
+  display: table;
+  border: 1px solid #cdcdcd;
+  border-radius: 0 2px 2px 0;
+}
+
+.header-search-input {
+  width: 570px;
+  padding: 4px;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  outline: none;
+  border: 2px solid white;
+}
+
+.header-search-arrow {
+  width: 20px;
+  padding-right: 5px;
+  color: #D9D9D9;
+  font-size: 10px;
+  background-color: white;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.header-search-button {
+  width: 60px;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: 0 2px 2px 0;
+}
+
+.header-search-button img{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0 2px 2px 0;
+}
+
+.header-user-box {
+  padding-left: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: .65;
+  cursor: default;
+}
+
+.header-user-box:hover {
+  opacity: 1;
+}
+
+.header-user-box div{
+  height: 30px;
+  width: 30px;
+  background-image: url('//ssl.gstatic.com/gb/images/v2_0b3bd130.png');
+  background-size: 112px 1828px;
+  background-position: -69px -854px;
+}
+
+.header-user-data {
+  padding-right: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  font: 13px/27px Arial,sans-serif;
+  cursor: default;
+  text-align: right;
+  opacity: .65;
+}
+
+.header-user-data:hover {
+  opacity: 1;
+}
+
+.header-user-data span {
+  color: gray;
+  font-size: 10px;
+  cursor: default;
+}
+
+/* Left side-bar */
+.left-body {
+  width: 202px;
+  position: relative;
+  float: left;
+}
+
+.navigation {
+  border: 1px solid black;
+}
+
+.chat {
+  border: 1px solid black;
+}
+
+/* Mailbox */
+.right-body {
+  float: left;
+  position: relative;
+  padding-right:14px;
+}
+
+.mailTable tr {
+border-bottom: 1px #e5e5e5 solid;
+empty-cells: show;
+font-size: 80%;
+height: 2.83ex;
+outline: none;
+padding: 3px 0 1px;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+.mailTable span {
+font-weight: bold;
+}
+
+.mailIcon{
+  width: 26px;
+}
+
+.mailSender {
+  width: 200px;
+  padding-right: 6px;
+  padding-left: 10px;
+}
+
+.mailText {
+
+}
+
+.mailBuffer {
+  width: 25px;
+}
+
+.mailTime {
+
+}
